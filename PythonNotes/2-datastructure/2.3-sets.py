@@ -29,7 +29,7 @@ print(my_set) #o/p= {1, 2, 4, 5, 6, 7}
 my_set.discard(10)  #remove an element from a set if it is a member .here 10 is not a member in the set.
 print(my_set) # o/p= {1, 2, 4, 5, 6, 7}
 
-#pop method  -removes a random item from the set.
+######pop method  -removes a random item from the set.
 removed_element=my_set.pop()
 print(removed_element) #o/p=1  first element is removed
 print(my_set) #o/p= {2, 4, 5, 6, 7}
@@ -66,15 +66,14 @@ print(set2) #o/p= {4, 5, 6, 7, 8, 9} ie set2 is not changed
 set1={1,2,3,4,5,6}
 set2={4,5,6,7,8,9}
 
-print(set1.difference(set2))  #o/p= {1, 2, 3} removed common elements from set1 and return remaining elements in set1
+print(set1.difference(set2))  #o/p= {1, 2, 3} , removed common elements from set1 and return remaining elements in set1
 set1.difference_update(set2)
 print(set1) #o/p= {1, 2, 3} ie set1 is updated with the remaining value
 
 # Symmetric difference
 
-print(set1.symmetric_difference(set2)) #o/p= {1, 2, 3, 4, 5, 6, 7, 8, 9}  unique elements from both the sets are combined remaining were removed
-set1.difference_update(set2) 
-print(set1) #o/p={1, 2, 3}
+print(set1.symmetric_difference(set2)) #o/p= {1, 2, 3, 7, 8, 9}  unique elements from both the sets are combined remaining were removed
+
 # -----------------------------------------------------------     Set methods ------------------------------------------------------------------------------------------------
 
 # Set methods
