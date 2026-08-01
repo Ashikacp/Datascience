@@ -65,6 +65,23 @@ print(is_palindrome("A man a plan a canal panama"))  #o/p =True
 print(is_palindrome("hello"))   #o/p =False
 
 
+########check if a number is palindrome or not (Without converting to a string)
+
+def is_palindrome(n):
+    original = n
+    reverse = 0
+
+    while n > 0:
+        digit = n % 10
+        reverse = reverse * 10 + digit
+        n = n // 10
+
+    return original == reverse
+
+print(is_palindrome(121))    # True
+print(is_palindrome(12321))  # True
+print(is_palindrome(1234))   # False
+
 #----------------------------------------------------------------------------------------------------------------------------------------
 #Example 5: factorial of a number using recurssion
 
@@ -114,3 +131,6 @@ def is_valid_email(email):
 # Calling the function
 print(is_valid_email("test@example.com"))  # Output: True
 print(is_valid_email("invalid-email"))  # Output: False
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------
