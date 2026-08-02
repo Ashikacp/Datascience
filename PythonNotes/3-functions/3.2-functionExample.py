@@ -126,11 +126,20 @@ def is_valid_email(email):
 
     pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
 
-    return re.match(pattern, email) is not None
+    return re.match(pattern, email) is not None      
 
 # Calling the function
 print(is_valid_email("test@example.com"))  # Output: True
 print(is_valid_email("invalid-email"))  # Output: False
 
 
+''' 
+#or use 
+if re.match(pattern, email):
+        return True
+    else:
+        return False
+
+ #or use return re.match(pattern, email) is not None   #This first version is simply a shorter and more Pythonic way of writing the same logic.       
+'''
 #----------------------------------------------------------------------------------------------------------------------------------------
