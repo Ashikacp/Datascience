@@ -1,5 +1,5 @@
 #Tuple is collection of ordered and immutable elements enclosed in parentheses()
-
+#whereas list the collection of ordered and mutable elements enclosed in []
 # Tuples are Immutable ie, we can’t change values in them.
  
 #creating a tuple

@@ -151,4 +151,4 @@ feedback = ["Great service!", "Great food","GREAT Person","Very satisfied", "Cou
 feedback.append("Not happy with the service")
 
 positive_feedback_count =sum(1 for comment in feedback if 'great' in comment.lower() or 'excellent' in comment.lower())
-print(positive_feedback_count)  #o/p=4
+print(positive_feedback_count)  #o/p=4  

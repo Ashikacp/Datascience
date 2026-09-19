@@ -22,7 +22,7 @@ print(student) #o/p={'name': 24, 'age': 32}
 
 # ---------------------------------------  Accessing dictionary elements  --------------------------------------------------------------------------------------------------------------------
 
-# Accessing dictionary elements
+# Accessing dictionary elements.  2 ways either directly call the keys or use get methods
 
 student={'name':'krish', 'age': 32,'grade':'A'}
 print(student['grade']) #o/p=A
